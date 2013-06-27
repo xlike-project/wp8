@@ -1,4 +1,23 @@
-package com.isoco.services;
+/**
+ *  Copyright © Intelligent Software Components S.A. 2013 All Rights Reserved.
+ *  
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *  
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *  
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *  
+ *  Authors: Alejandro Caparros    (acaparros@isoco.com)
+ *  		 Esteban García-Cuesta (egarcia@isoco.com)
+ *  
+ */
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -43,7 +62,6 @@ public class Chinese {
 					"application/x-www-form-urlencoded");
 
 			// Sending POST
-			System.out.println("Sending POST...");
 			outStream = new DataOutputStream(connection.getOutputStream());
 			outStream.writeBytes(body);
 			outStream.flush();
